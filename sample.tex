@@ -89,11 +89,11 @@
 \makecvheader
 \end{fullwidth}
 
-%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% Provide the file name containing the sidebar contents as an optional parameter to \section.
 %% You can always just use \marginpar{...} if you do
 %% not need to align the top of the contents to any
-%% \cvsection title in the "main" bar.
-\cvsection[sample-p1sidebar]{Experience}
+%% \section title in the "main" bar.
+\section[sample-p1sidebar]{Experience}
 
 \cvevent{Job Title 1}{Company 1}{Month 20XX -- Ongoing}{Location}
 \begin{itemize}
@@ -109,7 +109,7 @@
 \item Job description 2
 \end{itemize}
 
-\cvsection{Projects}
+\section{Projects}
 
 \cvevent{Project 1}{Funding agency/institution}{}{}
 \begin{itemize}
@@ -123,7 +123,7 @@ A short abstract would also work.
 
 \medskip
 
-\cvsection{A Day of My Life}
+\section{A Day of My Life}
 
 % Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
 % \wheelchart{outer radius}{inner radius}{
@@ -137,7 +137,7 @@ A short abstract would also work.
 }
 
 \clearpage
-\cvsection[page2sidebar]{Publications}
+\section[page2sidebar]{Publications}
 
 \nocite{*}
 
@@ -151,7 +151,7 @@ A short abstract would also work.
 
 \printbibliography[heading=pubtype,title={\printinfo{\faGroup}{Conference Proceedings}},type=inproceedings]
 
-%% If the NEXT page doesn't start with a \cvsection but you'd
+%% If the NEXT page doesn't start with a \section but you'd
 %% still like to add a sidebar, then use this command on THIS
 %% page to add it. The optional argument lets you pull up the
 %% sidebar a bit so that it looks aligned with the top of the

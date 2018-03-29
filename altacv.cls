@@ -118,14 +118,14 @@
 
 \renewenvironment{quote}{\color{accent}\itshape\large}{\par}
 
-\newcommand{\cvsection}[2][]{%
+\renewcommand{\section}[2][]{%
   \bigskip%
   \ifstrequal{#1}{}{}{\marginpar{\vspace*{\dimexpr1pt-\baselineskip}\raggedright\input{#1}}}%
   {\color{heading}\LARGE\bfseries\MakeUppercase{#2}}\\[-1ex]%
   {\color{heading}\rule{\linewidth}{2pt}\par}\medskip
 }
 
-\newcommand{\cvsubsection}[1]{%
+\renewcommand{\subsection}[1]{%
   \smallskip%
   {\color{emphasis}\large\bfseries{#1}\par}\medskip
 }
